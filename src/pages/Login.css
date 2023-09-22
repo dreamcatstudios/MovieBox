@@ -1,0 +1,137 @@
+/* .login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background : linear-gradient(white,skyblue);
+    justify-content: center;
+}
+.head{
+    text-align: center;
+}
+#heading{
+    font-size: 4.5vmax;
+    margin-bottom: 4vmax;
+}
+.mail{
+    font-size: 2vmax;
+    padding: 0vmax;
+    margin-right: 1vmax; 
+}
+.mailph{
+    height: 5vmax;
+    width: 30vmax;
+}
+#mailid{
+    margin-right: 24vmax;
+    margin-bottom: -2.1vmax;
+}
+.pass{
+    font-size: 2vmax;
+    padding: 2.5vh;
+}
+#passid{
+    margin-right: 21vmax;
+    margin-bottom: -2.1vmax;
+}
+#passw{
+    margin-right: 19vmax;
+
+}
+.head2{
+    font-size: 2vmax;
+    padding-bottom: 2vmax;
+}
+.head2 a{
+    font-size: 1.5vmax;
+}
+input{
+    height: 10%;
+    border-radius: 20px;
+    outline: none;
+    border : none;
+    padding-left: 3%;
+} */
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: rgba(0, 0, 0, 0.695);
+    /* background-image: url("https://cdn.pixabay.com/photo/2014/04/14/20/11/pink-324175_1280.jpg"); */
+    background: linear-gradient( #5680E9,#84CEEB,#5AB9EA,#C1C8E4,#8860D0);
+}
+.login-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 40%;
+    border : 1px solid black;
+    overflow: hidden;
+    z-index: 99;
+    box-shadow: 0 0 15px rgba(86, 5, 152, 0.439);
+}
+.login-container-2{
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    background-color: rgba(216, 211, 211, 0.322);
+    filter: blur(40px);
+    z-index: 5;
+    overflow: hidden;
+}
+.login-container h1{
+    position: absolute;
+    font-size: 3vw;
+    top: 20%;
+}
+.login-container h2{
+    font-size: 3rem;
+}
+input{
+    height: 5vh;
+    width: 24vw;
+    border : 1px solid black;
+    padding: 2%;
+    outline: none;
+}
+.email{
+    position: absolute;
+    top: 35%;
+    left : 20%;
+}
+.password{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    height: 7%;
+    width: 60%;
+    background-color: transparent;
+    border : 1px solid black;
+    font-size: 1.4em;
+}
+button i{
+    font-size: 2em;
+}
+#button-create{
+    position: absolute;
+    top: 70%;
+}
+#button-google{
+    position: absolute;
+    top: 80%;
+}
