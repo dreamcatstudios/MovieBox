@@ -1,23 +1,12 @@
 import "./App.css";
-<<<<<<< Updated upstream
-import Login from "./pages/Login";
-
-function App() {
-  return (
-    <>
-      <Login />
-    </>
-  );
-=======
 import Card from "./components/Card";
-
+import Carousal from "./components/Carousal";
 function App() {
   // const [count, setCount] = useState(0);
 
   return <>
-    <Card/>
+    <Carousal/>
   </>;
->>>>>>> Stashed changes
 }
 
 export default App;
