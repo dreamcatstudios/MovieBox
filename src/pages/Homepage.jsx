@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import "./Homepage.css";
 import { MovieContext } from "../context/MovieContext";
-
+import Card from "../components/Card";
 const Homepage = () => {
   const movieData = useContext(MovieContext);
-
+  const [state,setState] = useState("")
   console.log("Movie Data: ", movieData);
   return (
     <>
@@ -60,7 +60,6 @@ const Homepage = () => {
                   error distinctio, deleniti aperiam?
                 </p>
               </div>
-
               <div>
                 <button className="btn">Watch Trailer</button>
               </div>
@@ -68,6 +67,13 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+      <div id="page2">
+      {
+        movieData.map((elem, index)=>{
+          return index < 8 &&  (<Card key={index} elem = {elem}/>)
+        })
+      }
+      </div>
     </>
   );
 };

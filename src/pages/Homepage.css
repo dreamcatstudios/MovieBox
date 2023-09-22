@@ -102,3 +102,11 @@ span {
   width: 40px;
   height: 25px;
 }
+
+#page2{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}

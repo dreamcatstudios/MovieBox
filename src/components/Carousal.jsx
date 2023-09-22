@@ -6,12 +6,6 @@ const Carousal = () => {
     <div className="full-page">
         <div className="carousal-container">
         <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
     </div>
     </div>
   )
