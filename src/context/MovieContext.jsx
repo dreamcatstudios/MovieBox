@@ -30,8 +30,6 @@ export const MovieProvider = ({ children }) => {
   return <MovieContext.Provider value={data}>{children}</MovieContext.Provider>;
 };
 
-// export const useMovieData = () => {
-//   return useContext(MovieContext);
-// };
+
 
 export { MovieContext };

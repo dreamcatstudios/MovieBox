@@ -1,26 +1,25 @@
 import React, { useState } from "react";
-import "./Login.css";
+import "./SignUp.css";
 
 import { auth, googleProvider } from "../config/Firebase";
 import {
-  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
   signInWithRedirect,
   setPersistence,
   browserSessionPersistence,
 } from "firebase/auth";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(false);
 
-  const signInUser = async () => {
+  const createAccount = async () => {
     try {
-      signInWithEmailAndPassword(auth, email, password);
-      setError(false);
+      await setPersistence(auth, browserSessionPersistence);
+      await createUserWithEmailAndPassword(auth, email, password);
     } catch (error) {
-      setError(true);
+      console.error("Error creating account:", error);
     }
   };
 
@@ -36,7 +35,7 @@ const Login = () => {
   return (
     <div className="login-page">
       <div className="login-container">
-        <h1>Login back to your account</h1>
+        <h1>Create Your Free Account</h1>
         <div className="input-container">
           <div className="input-group">
             <label htmlFor="email">Email:</label>
@@ -60,24 +59,22 @@ const Login = () => {
           </div>
         </div>
         <p>
-          Dont't have a account?{" "}
-          <Link to="/signup">
+          Already have an account?{" "}
+          <Link to="/login">
             <a href="#" className="text-link">
-              Sign Up
+              Log in
             </a>
           </Link>
         </p>
-        <button id="button-create" onClick={signInUser}>
-          <i className="ri-mail-line"></i> Log in
+        <button id="button-create" onClick={createAccount}>
+          <i className="ri-mail-line"></i> Create Account
         </button>
-        <button id="button-google">
-          <i className="ri-google-line" onClick={googleSignIn}></i>Sign in with
-          Google
+        <button id="button-google" onClick={googleSignIn}>
+          <i className="ri-google-line"></i> Sign in with Google
         </button>
-        <div>{error && <p>Incorrect email or password</p>}</div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default SignUp;
