@@ -1,13 +1,16 @@
 import "./App.css";
-import Card from "./components/Card";
-import Carousal from "./components/Carousal";
+import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
 import Login from "./pages/Login";
-function App() {
-  // const [count, setCount] = useState(0);
 
-  return <>
-  <Login/>
-  </>;
+function App() {
+  return (
+    <>
+      {/* <Login /> */}
+      <Homepage />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
