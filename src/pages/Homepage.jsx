@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
 import "./Homepage.css";
 import { MovieContext } from "../context/MovieContext";
-import Card from "../components/Card";
 import CardsSections from "../components/CardsSections";
+import Footer from "../components/Footer";
+import { signOut } from "firebase/auth";
+import { auth } from "../config/Firebase";
+
 const Homepage = () => {
   const movieData = useContext(MovieContext);
-  console.log("Movie Data: ", movieData);
+  console.log("Movie Data: ", movieData.data);
   return (
     <>
       <section className="section-hero">
@@ -24,8 +27,12 @@ const Homepage = () => {
               />
             </div>
             <div>
-              <button style={{ margin: "0" }} className="btn-header">
-                Sign In
+              <button
+                onClick={() => signOut(auth)}
+                style={{ margin: "0" }}
+                className="btn-header"
+              >
+                Sign Out
               </button>
             </div>
           </nav>
@@ -49,17 +56,16 @@ const Homepage = () => {
                 </div>
                 <div>
                   <img src="/src/assets/rotten.png" alt="" className="logo" />
-                  <p style={{ margin: "0" }}>8.6/100</p>
+                  <p style={{ margin: "0" }}>96%</p>
                 </div>
                 {/* REVIEW SECTION */}
               </div>
               <div>
                 <p className="content-para">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quisquam nulla ratione perspiciatis. Repellendus,
-                  consequuntur. Quidem iste incidunt, libero temporibus,
-                  provident repellat autem consectetur id accusantium pariatur
-                  error distinctio, deleniti aperiam?
+                  John Wick is on the run after killing a member of the
+                  international assassins' guild, and with a $14 million price
+                  tag on his head, he is the target of hit men and women
+                  everywhere.
                 </p>
               </div>
               <div>
@@ -73,6 +79,7 @@ const Homepage = () => {
         </div>
       </section>
       <CardsSections />
+      <Footer />
     </>
   );
 };

@@ -1,10 +1,10 @@
+import React, { useEffect, useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/Homepage";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import { auth } from "./config/Firebase";
-import { useEffect, useState } from "react";
 
 const routerLocked = createBrowserRouter([
   { path: "/", element: <Login /> },

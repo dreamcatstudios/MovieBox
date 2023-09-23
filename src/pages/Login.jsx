@@ -13,14 +13,14 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(null); // Use null for initial state
 
   const signInUser = async () => {
     try {
-      signInWithEmailAndPassword(auth, email, password);
-      setError(false);
+      await signInWithEmailAndPassword(auth, email, password);
+      setError(null); // Clear any previous errors
     } catch (error) {
-      setError(true);
+      setError("Incorrect email or password");
     }
   };
 
@@ -60,21 +60,18 @@ const Login = () => {
           </div>
         </div>
         <p className="login-para">
-          Dont't have a account?{" "}
-          <Link to="/signup">
-            <a href="#" className="text-link">
-              Sign Up
-            </a>
+          Don't have an account?{" "}
+          <Link to="/signup" className="text-link">
+            Sign Up
           </Link>
         </p>
         <button id="button-create" onClick={signInUser}>
           <i className="ri-mail-line"></i> Log in
         </button>
-        <button id="button-google">
-          <i className="ri-google-line" onClick={googleSignIn}></i>Sign in with
-          Google
+        <button id="button-google" onClick={googleSignIn}>
+          <i className="ri-google-line"></i> Sign in with Google
         </button>
-        <div>{error && <p>Incorrect email or password</p>}</div>
+        <div>{error && <p>{error}</p>}</div>
       </div>
     </div>
   );

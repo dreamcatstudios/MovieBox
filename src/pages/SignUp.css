@@ -1,9 +1,4 @@
 /* Reset default styles for better consistency */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .login-page {
   display: flex;
@@ -17,9 +12,9 @@
 .login-container {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 15rem;
+  padding: 10rem;
   text-align: center;
-  max-width: 130rm;
+  max-width: 130rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
@@ -54,9 +49,9 @@ input[type="password"] {
   outline: none;
 }
 
-p {
+.login-para {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 1.75rem;
 }
 
 .text-link {
@@ -82,4 +77,14 @@ button i {
 
 #button-google {
   background-color: #be123c; /* Google blue color */
+}
+
+/* Media Query for Smaller Devices */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 5rem; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Make the container full width */
+  }
+
+  /* You can add more responsive styles here */
 }

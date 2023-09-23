@@ -32,12 +32,18 @@ const Footer = () => {
             />
           </div>
           <div className="terms-conditions">
-            <a href="#">Conditions of Use</a>
-            <a href="#">Privacy & Policy</a>
-            <a href="#">Press Room</a>
+            <a className="footer-a" href="#">
+              Jatin
+            </a>
+            <a className="footer-a" href="#">
+              Harsh
+            </a>
+            <a className="footer-a" href="#">
+              Karan
+            </a>
           </div>
-          <div className="copyright">
-            <p>MovieBox by DreamcatStudios</p>
+          <div className="copyright-container">
+            <p className="copyright-para">MovieBox by us with ❤️ with React ⚛</p>
           </div>
         </div>
       </footer>
