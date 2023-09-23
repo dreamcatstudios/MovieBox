@@ -1,55 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
+
 import { auth, googleProvider } from "../config/Firebase";
 import {
   createUserWithEmailAndPassword,
+  signInWithRedirect,
   setPersistence,
   browserSessionPersistence,
-  sendEmailVerification,
 } from "firebase/auth";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [redirectToHome, setRedirectToHome] = useState(false); // State for redirection
-
-
-  useEffect(() => {
-    // Check if the user is already signed in
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
-        setRedirectToHome(true); // Set to true to trigger redirection
-      }
-    });
-
-    return () => {
-      unsubscribe(); // Unsubscribe from the auth state change listener when the component unmounts
-    };
-  }, []);
 
   const createAccount = async () => {
     try {
       await setPersistence(auth, browserSessionPersistence);
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-
-      // Send email verification link to the user
-      await sendEmailVerification(auth.currentUser);
-
-      // Redirect to a page informing the user to verify their email
-      // history.push("/");
+      await createUserWithEmailAndPassword(auth, email, password);
     } catch (error) {
       console.error("Error creating account:", error);
     }
   };
-
-  if (redirectToHome) {
-    return <Redirect to="/" />; // Redirect to the homepage if authenticated
-  }
 
   const googleSignIn = async () => {
     try {
@@ -86,10 +58,12 @@ const SignUp = () => {
             />
           </div>
         </div>
-        <p className="login-para">
+        <p>
           Already have an account?{" "}
-          <Link to="/login" className="text-link">
-            Log in
+          <Link to="/login">
+            <a href="#" className="text-link">
+              Log in
+            </a>
           </Link>
         </p>
         <button id="button-create" onClick={createAccount}>

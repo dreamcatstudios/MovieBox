@@ -5,6 +5,7 @@ import Homepage from "./pages/Homepage";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
 import { auth } from "./config/Firebase";
+import Poster from "./components/Poster";
 
 const routerLocked = createBrowserRouter([
   { path: "/", element: <Login /> },
