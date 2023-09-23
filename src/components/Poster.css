@@ -65,7 +65,7 @@
 .stars h2 span{
     font-size: 1.3em;
 }
-.main-div-description p{
+.main-div-description{
     font-size: 1.3em;
     padding-right: 45% ;
     font-weight: 100;
@@ -79,14 +79,14 @@
     color: yellow;
     gap: 2%;
 }
-/* button{
+.main-div-button-controll button{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     height: 30%;
     width:50%;
-} */
+}
 #later{
     font-size: 1.6rem;
 }
@@ -130,15 +130,12 @@
         color: #BE123C;
         font-weight: 100;
     }
-    span{
-        font-size: 1.3em;
-    }
-    .main-div-description p{
+    .main-div-description{
         font-size: 1.3em;
         font-weight: 100;
         padding-right: 20%;
     }
-    button{
+    .main-div-button-controll button{
         height: 30%;
         width:70%;
     }
@@ -180,15 +177,12 @@
         color: #BE123C;
         font-weight: 100;
     }
-    span{
-        font-size: 1.3em;
-    }
-    .main-div-description p{
+    .main-div-description{
         font-size: 1.3em;
         font-weight: 100;
         padding-right: 20%;
     }
-    button{
+    .main-div-button-controll button{
         height: 30%;
         width:70%;
     }
@@ -230,15 +224,12 @@
         color: #BE123C;
         font-weight: 100;
     }
-    span{
-        font-size: 1.3em;
-    }
     .main-div-description p{
         font-size: 1.3em;
         font-weight: 100;
         padding-right: 20%;
     }
-    button{
+    .main-div-button-controll button{
         height: 30%;
         width:70%;
     }

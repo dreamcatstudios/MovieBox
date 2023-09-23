@@ -58,12 +58,10 @@ const Poster = () => {
           </div>
         </div>
         <div className="main-div-description">
-          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
             sapiente optio libero omnis possimus facere culpa itaque consequatur
             quibusdam suscipit! Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Obcaecati, consequatur.
-          </p>
         </div>
         <div className="main-div-description-rating">
           <i class="ri-star-fill"></i>
