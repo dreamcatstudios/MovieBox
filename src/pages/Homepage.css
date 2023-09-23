@@ -6,12 +6,13 @@
   background-size: cover;
   background-position: center;
 }
-
 span {
   color: white;
   font-size: 2rem;
 }
-
+input{
+  outline: none;
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -71,6 +72,11 @@ span {
   text-decoration: none;
   border-radius: 6px;
   margin-top: 3rem;
+}
+.btn i{
+  position: relative;
+  font-size: 1.2em;
+  top: 4px;
 }
 
 .btn-header {

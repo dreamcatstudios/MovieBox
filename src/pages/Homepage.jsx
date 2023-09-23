@@ -63,7 +63,10 @@ const Homepage = () => {
                 </p>
               </div>
               <div>
-                <button className="btn">Watch Trailer</button>
+                <button className="btn">
+                  <i class="ri-live-line"></i>
+                  Watch Trailer
+                </button>
               </div>
             </div>
           </div>
