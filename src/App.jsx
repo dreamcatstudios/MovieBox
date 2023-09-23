@@ -24,7 +24,6 @@ const routerUnlocked = createBrowserRouter([
 
 function App() {
   const [user, setUser] = useState(null);
-
   useEffect(() => {
     // Check if the user is already signed in
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -46,13 +45,11 @@ function App() {
 
   return (
     <>
-      {/* {user || localStorage.getItem("userLoggedIn") ? (
+      {user || localStorage.getItem("userLoggedIn") ? (
         <RouterProvider router={routerUnlocked}></RouterProvider>
       ) : (
         <RouterProvider router={routerLocked}></RouterProvider>
-      )} */}
-      {/* <Poster/> */}
-      <Homepage/>
+      )}
     </>
   );
 }
