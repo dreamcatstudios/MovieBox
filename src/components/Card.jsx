@@ -39,14 +39,18 @@ const Card = ({ elem, type }) => {
   }, [type]);
 
   return (
-    <Link to={`/movie/${elem[name]}`}>
+    <Link
+      style={{ textDecoration: "none", color: "black" }}
+      to={`/movie/${elem[name]}`}
+    >
       <div className="card-container">
         <div className="like">
           <i class="ri-heart-fill"></i>
         </div>
         <div className="card-container-image">
           <img
-            src={`https://image.tmdb.org/t/p/w500${elem.backdrop_path}`}
+            style={{ width: "100%", height: "100%", objectFit: "cover"}}
+            src={`https://image.tmdb.org/t/p/w500${elem.poster_path}`}
             alt=""
           />
         </div>
