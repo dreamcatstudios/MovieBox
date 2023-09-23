@@ -11,12 +11,15 @@ const routerLocked = createBrowserRouter([
   { path: "/", element: <Login /> },
   { path: "/login", element: <Login /> },
   { path: "/signup", element: <SignUp /> },
+  { path: "/movie", element: <Poster /> },
 ]);
 
 const routerUnlocked = createBrowserRouter([
   { path: "/", element: <Homepage /> },
   { path: "/login", element: <Homepage /> },
   { path: "/signup", element: <Homepage /> },
+  { path: "/movie", element: <Homepage /> },
+  { path: "/movie/:movies", element: <Poster /> },
 ]);
 
 function App() {

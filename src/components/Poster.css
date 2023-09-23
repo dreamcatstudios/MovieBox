@@ -57,7 +57,12 @@
     color: #BE123C;
     font-weight: 100;
 }
-span{
+
+
+.director h2 span{
+    font-size: 1.3em;
+}
+.stars h2 span{
     font-size: 1.3em;
 }
 .main-div-description p{
@@ -74,14 +79,14 @@ span{
     color: yellow;
     gap: 2%;
 }
-button{
+/* button{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     height: 30%;
     width:50%;
-}
+} */
 #later{
     font-size: 1.6rem;
 }
