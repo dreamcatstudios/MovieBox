@@ -37,11 +37,21 @@ const Poster = () => {
 
   return (
     <div className="poster-container">
-      <div className="poster-container-img">
-        <img
-          src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}
+      <div
+        className="poster-container-img"
+        style={{
+          backgroundImage: `url('https://image.tmdb.org/t/p/w500${data.poster_path}')`,
+          backgroundRepeat: "none",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "brightness(80%) contrast(100%) saturate(100%)",
+        }}
+      >
+        {/* <img
+          src={}
           alt=""
-        />
+          style={{ objectFit: "cover" }}
+        /> */}
       </div>
       <div className="poster-container-filter"></div>
       <div className="main-div">
