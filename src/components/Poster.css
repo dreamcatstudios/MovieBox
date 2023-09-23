@@ -1,0 +1,244 @@
+.poster-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+}
+.poster-container-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+.poster-container-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.poster-container-filter{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image : linear-gradient(to right,rgba(0, 0, 0, 0.943),rgba(0, 0, 0, 0.797),rgba(255, 255, 255, 0));
+    z-index : 10;
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 60%;
+    position: absolute;
+    margin-left: 5%;
+    z-index : 10;
+    /* background-color: blue; */
+    /* gap: 3%; */
+}
+.main-div-title{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    width: 60%;
+    min-height: 15%;
+    color: white;
+}
+.main-div-about{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 7%;
+    width: 50%;
+    align-items: center;
+    font-size: .7rem;
+}
+.main-div-about h2{
+    color: #BE123C;
+    font-weight: 100;
+}
+span{
+    font-size: 1.3em;
+}
+.main-div-description p{
+    font-size: 1.3em;
+    padding-right: 45% ;
+    font-weight: 100;
+}
+.main-div-description-rating{
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    height: 5%;
+    width: 40%;
+    color: yellow;
+    gap: 2%;
+}
+button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 30%;
+    width:50%;
+}
+#later{
+    font-size: 1.6rem;
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .poster-container{
+        overflow: hidden;
+    }
+    .main-div{
+        height: 90%;
+        width: 100%;
+        position: absolute;
+        margin-left: 5%;
+        /* background-color: blue; */
+        /* gap: 3%; */
+    }
+    .main-div-title{
+        font-size: 3rem;
+    }
+    .main-div-about{
+        position: relative;
+        top: -5%;
+        height: 7%;
+        width: 100%;
+        justify-content: center;
+        font-size: .8rem;
+        left: 5%;
+    }
+    .director{
+        position: relative;
+        left: -28%;
+    }
+    .stars{
+        position: relative;
+        left: -25%;
+    }
+    .main-div-about h2{
+        color: #BE123C;
+        font-weight: 100;
+    }
+    span{
+        font-size: 1.3em;
+    }
+    .main-div-description p{
+        font-size: 1.3em;
+        font-weight: 100;
+        padding-right: 20%;
+    }
+    button{
+        height: 30%;
+        width:70%;
+    }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    .poster-container{
+        overflow: hidden;
+    }
+    .main-div{
+        height: 90%;
+        width: 100%;
+        position: absolute;
+        margin-left: 5%;
+        /* background-color: blue; */
+        /* gap: 3%; */
+    }
+    .main-div-title{
+        font-size: 3rem;
+    }
+    .main-div-about{
+        position: relative;
+        top: -5%;
+        height: 7%;
+        width: 100%;
+        justify-content: center;
+        font-size: .8rem;
+        left: 5%;
+    }
+    .director{
+        position: relative;
+        left: -28%;
+    }
+    .stars{
+        position: relative;
+        left: -25%;
+    }
+    .main-div-about h2{
+        color: #BE123C;
+        font-weight: 100;
+    }
+    span{
+        font-size: 1.3em;
+    }
+    .main-div-description p{
+        font-size: 1.3em;
+        font-weight: 100;
+        padding-right: 20%;
+    }
+    button{
+        height: 30%;
+        width:70%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .poster-container{
+        overflow: hidden;
+    }
+    .main-div{
+        height: 90%;
+        width: 100%;
+        position: absolute;
+        margin-left: 5%;
+        /* background-color: blue; */
+        /* gap: 3%; */
+    }
+    .main-div-title{
+        font-size: 2rem;
+    }
+    .main-div-about{
+        position: relative;
+        top: -3%;
+        flex-direction: column;
+        height: 7%;
+        width: 100%;
+        justify-content: center;
+        font-size: .7rem;
+    }
+    .director{
+        position: relative;
+        left: -28%;
+    }
+    .stars{
+        position: relative;
+        left: -20%;
+    }
+    .main-div-about h2{
+        color: #BE123C;
+        font-weight: 100;
+    }
+    span{
+        font-size: 1.3em;
+    }
+    .main-div-description p{
+        font-size: 1.3em;
+        font-weight: 100;
+        padding-right: 20%;
+    }
+    button{
+        height: 30%;
+        width:70%;
+    }
+ }
+
+/* .main-div-description-rating i{
+    background-color: yellow;
+} */
