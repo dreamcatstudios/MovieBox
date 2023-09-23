@@ -47,3 +47,10 @@ footer {
   margin-top: 10rem;
   border-top: 0.5px solid #333;
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  footer {
+    margin-top: 5rem;
+  }
+}

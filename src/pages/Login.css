@@ -7,6 +7,7 @@
   min-height: 100vh;
   background-color: white;
   padding: 5rem;
+  overflow: hidden;
 }
 
 .login-container {
@@ -15,7 +16,7 @@
   padding: 10rem;
   text-align: center;
   max-width: 130rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0); */
   border-radius: 8px;
 }
 
@@ -84,6 +85,7 @@ button i {
   .login-container {
     padding: 3rem; /* Adjust padding for smaller screens */
     max-width: 100%; /* Make the container full width */
+
   }
   .login-page {
     display: flex;
