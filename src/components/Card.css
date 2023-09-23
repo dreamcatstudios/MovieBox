@@ -103,3 +103,19 @@
   font-size: 1em;
   margin: 0;
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    border: 0.25px solid #333;
+    padding-bottom: 0.75rem;
+  }
+
+  .card-container-info-title {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    font-size: 1rem;
+    width: 100%;
+  }
+}

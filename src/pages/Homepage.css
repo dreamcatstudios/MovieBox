@@ -1,10 +1,11 @@
 .section-hero {
   min-height: 100vh;
-  width: 100%;
-  background-image: url("./src/assets/Poster.png");
+  max-width: 100%;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/moviebox-1d242.appspot.com/o/Poster.png?alt=media&token=f3ffa357-fb4a-4082-a067-adaa95b1fd15");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 span {
   color: white;
@@ -118,7 +119,7 @@ input {
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
   .container {
-    padding: 3rem; /* Adjust padding for smaller screens */
+    padding: 2rem; /* Adjust padding for smaller screens */
   }
 
   .input-field {
@@ -126,7 +127,7 @@ input {
   }
 
   .navbar {
-    padding: 1rem 3rem; /* Adjust padding for smaller screens */
+    padding: 1rem 2rem; /* Adjust padding for smaller screens */
   }
 
   .content-hero {

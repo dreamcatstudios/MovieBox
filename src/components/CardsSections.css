@@ -3,7 +3,8 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  max-width: 100%;
   flex-wrap: wrap;
   margin-top: 2rem;
   padding: 0rem 7rem;
@@ -22,6 +23,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+
   margin-bottom: 1rem;
 }
 
@@ -58,4 +60,21 @@
 .span-underline.active {
   width: 100%;
   background-color: #be123c;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  #page2 {
+    padding: 0 1rem;
+  }
+
+  #page2-card-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+  }
 }
