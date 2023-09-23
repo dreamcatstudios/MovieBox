@@ -1,4 +1,4 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import "./Homepage.css";
 import { MovieContext } from "../context/MovieContext";
 import Card from "../components/Card";
@@ -24,7 +24,9 @@ const Homepage = () => {
               />
             </div>
             <div>
-              <button className="btn-header">Sign In</button>
+              <button style={{ margin: "0" }} className="btn-header">
+                Sign In
+              </button>
             </div>
           </nav>
         </header>
@@ -43,11 +45,11 @@ const Homepage = () => {
                     alt=""
                     className="logo-long"
                   />
-                  <p>8.6/100</p>
+                  <p style={{ margin: "0" }}>8.6/100</p>
                 </div>
                 <div>
                   <img src="/src/assets/rotten.png" alt="" className="logo" />
-                  <p>8.6/100</p>
+                  <p style={{ margin: "0" }}>8.6/100</p>
                 </div>
                 {/* REVIEW SECTION */}
               </div>
@@ -67,7 +69,7 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <CardsSections/>
+      <CardsSections />
     </>
   );
 };

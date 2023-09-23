@@ -59,7 +59,7 @@ const Login = () => {
             />
           </div>
         </div>
-        <p>
+        <p className="login-para">
           Dont't have a account?{" "}
           <Link to="/signup">
             <a href="#" className="text-link">

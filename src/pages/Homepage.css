@@ -7,11 +7,6 @@
   background-position: center;
 }
 
-button {
-  margin: 0;
-  padding: 0;
-}
-
 span {
   color: white;
   font-size: 2rem;
@@ -25,7 +20,7 @@ span {
 
 .container {
   padding: 7rem;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +30,7 @@ span {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 7rem;
+  padding: 1.75rem 7rem;
   align-items: center;
 }
 
@@ -47,7 +42,7 @@ span {
 .content-para {
   color: white;
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .heading {
@@ -80,7 +75,7 @@ span {
 
 .btn-header {
   padding: 1rem 3rem;
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -95,8 +90,9 @@ span {
 }
 
 .input-field {
-  border: 1px solid white;
-  padding: 1rem 15rem;
+  border: 2px solid white;
+  padding: 1rem 1rem;
+  min-width: 50rem;
   background-color: transparent;
   border-radius: 6px;
   color: white;
@@ -111,13 +107,4 @@ span {
 .logo-long {
   width: 40px;
   height: 25px;
-}
-
-#page2 {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: center;
-  width: 100vw;
-  flex-wrap: wrap;
 }

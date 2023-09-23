@@ -1,9 +1,4 @@
 /* Reset default styles for better consistency */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .login-page {
   display: flex;
@@ -54,7 +49,7 @@ input[type="password"] {
   outline: none;
 }
 
-p {
+.login-para {
   margin-top: 20px;
   font-size: 14px;
 }
