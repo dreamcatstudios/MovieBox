@@ -15,7 +15,10 @@ const Homepage = () => {
         <header>
           <nav className="navbar">
             <div className="logo-container">
-              <img src="/src/assets/tv.png" alt="" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/moviebox-1d242.appspot.com/o/Poster.png?alt=media&token=f3ffa357-fb4a-4082-a067-adaa95b1fd15"
+                alt=""
+              />
               <span>MovieBox</span>
             </div>
             <div>

@@ -82,7 +82,7 @@ button i {
 /* Media Query for Smaller Devices */
 @media (max-width: 768px) {
   .login-container {
-    padding: 5rem; /* Adjust padding for smaller screens */
+    padding: 7rem; /* Adjust padding for smaller screens */
     max-width: 100%; /* Make the container full width */
   }
 
