@@ -91,7 +91,7 @@ button i {
     align-items: center;
     min-height: 100vh;
     background-color: white;
-    padding: 1.25rem;
+    padding: 0 1.25rem;
   }
 
   /* You can add more responsive styles here */

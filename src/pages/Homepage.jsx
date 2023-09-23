@@ -15,7 +15,10 @@ const Homepage = () => {
         <header>
           <nav className="navbar">
             <div className="logo-container">
-              <img src="/src/assets/tv.png" alt="" />
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/moviebox-1d242.appspot.com/o/tv.png?alt=media&token=bd76ae19-568f-418d-b5ff-5bd2724e451a"
+                alt=""
+              />
               <span>MovieBox</span>
             </div>
             <div>
@@ -48,14 +51,18 @@ const Homepage = () => {
                 {/* REVIEW SECTION */}
                 <div>
                   <img
-                    src="/src/assets/imdb.png"
+                    src="https://firebasestorage.googleapis.com/v0/b/moviebox-1d242.appspot.com/o/imdb.png?alt=media&token=25d6b1bd-483a-4309-8101-e616315eb32e"
                     alt=""
                     className="logo-long"
                   />
                   <p style={{ margin: "0" }}>8.6/100</p>
                 </div>
                 <div>
-                  <img src="/src/assets/rotten.png" alt="" className="logo" />
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/moviebox-1d242.appspot.com/o/rotten.png?alt=media&token=96dd342d-9a9f-4569-a988-4113e2a6dab8"
+                    alt=""
+                    className="logo"
+                  />
                   <p style={{ margin: "0" }}>96%</p>
                 </div>
                 {/* REVIEW SECTION */}
