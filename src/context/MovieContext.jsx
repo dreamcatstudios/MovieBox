@@ -1,10 +1,8 @@
 import axios from "axios";
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext,useState,useEffect } from "react";
 
 const MovieContext = createContext();
-
-const apiKey = "e3e183dd870b5b10fecdfadc95f0fa17"; // Replace with your actual API key
-
+const apiKey = "e3e183dd870b5b10fecdfadc95f0fa17";
 const trendingMovies = "https://api.themoviedb.org/3/trending/movie/week";
 const trendingShows = "https://api.themoviedb.org/3/trending/tv/week";
 const upcomingMovies = "https://api.themoviedb.org/3/movie/upcoming";

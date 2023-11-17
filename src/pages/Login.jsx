@@ -13,28 +13,26 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null); // Use null for initial state
-
+  const [error, setError] = useState(null);
   const signInUser = async () => {
-    try {
+    try{
       await signInWithEmailAndPassword(auth, email, password);
-      setError(null); // Clear any previous errors
-    } catch (error) {
+      setError(null);
+    }catch(error){
       setError("Incorrect email or password");
     }
   };
-
   const googleSignIn = async () => {
     try {
       await setPersistence(auth, browserSessionPersistence);
       await signInWithRedirect(auth, googleProvider);
-    } catch (error) {
-      console.error("Error signing in with Google:", error);
-    }
+    } catch (error){console.error("Error signing in with Google:", error);}
   };
-
-  return (
+  return(
     <div className="login-page">
+      <div className="login-page-background">
+        <img src="https://firebasestorage.googleapis.com/v0/b/moviebox-1d242.appspot.com/o/flat.png?alt=media&token=aea3b92e-75da-4e10-b248-1480efd0010c" alt=""/>
+      </div>
       <div className="login-container">
         <h1>Login back to your account</h1>
         <div className="input-container">
@@ -76,5 +74,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;

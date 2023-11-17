@@ -78,6 +78,7 @@ const Poster = () => {
           <i class="ri-star-fill"></i>
           <i class="ri-star-fill"></i>
           <i class="ri-star-fill"></i>
+          <i class="ri-star-fill"></i>
         </div>
         <div className="main-div-button-controll">
           <button id="play">

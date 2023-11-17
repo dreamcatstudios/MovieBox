@@ -110,12 +110,10 @@ input{
   width: 25px;
   height: 25px;
 }
-
 .logo-long {
   width: 40px;
   height: 25px;
 }
-
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
   .container {
@@ -133,15 +131,12 @@ input{
   .content-hero {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
-
   .content-para {
     margin-top: 2rem; /* Adjust margin for smaller screens */
   }
-
   .heading {
     font-size: 5rem; /* Adjust font size for smaller screens */
     line-height: 4rem; /* Adjust line height for smaller screens */
   }
-
   /* Other style adjustments for smaller screens... */
 }
